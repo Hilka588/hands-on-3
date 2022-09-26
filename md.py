@@ -10,7 +10,7 @@ def calcenergy(a):  #calculates the epot, ekin, etot and T per atom.
     epot = a.get_potential_energy() / len(a)
     ekin = a.get_kinetic_energy() / len(a)
     etot = epot + ekin
-    T = ekin / (1.5 * units.kB)
+    T = ekin / (1.5 * units.kB) + 2
     return [epot, ekin, T, epot]
 
 def run_md():
