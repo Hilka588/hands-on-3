@@ -17,7 +17,6 @@ class MdTests(unittest.TestCase):
                     rCut=-1, modified=True)
         
         boolean = False
-        print(calcenergy(atoms))
         if calcenergy(atoms) == [-0.08194238731586774, 0.0, 0.0, -0.08194238731586774]:
             boolean = True
 
